@@ -1,7 +1,7 @@
 <%@page import="java.sql.Date"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<!--page import="org.apache.jasper.tagplugins.jstl.core.ForEach"-->
 <%@page import="java.sql.ResultSet"%>
 <%@page import="ModelBean.SanPham"%>
 <%@page import="ModelBean.ThuongHieu"%>
