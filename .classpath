@@ -30,6 +30,5 @@
 	<classpathentry kind="lib" path="F:/Java/eclipse-workspace/ShopDH/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.15.jar"/>
 	<classpathentry kind="lib" path="F:/Java/eclipse-workspace/ShopDH/src/main/webapp/WEB-INF/lib/sqljdbc42.jar"/>
 	<classpathentry kind="lib" path="F:/Java/eclipse-workspace/ShopDH/src/main/webapp/WEB-INF/lib/jstl.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="output" path="target/flexible-cloudstorage-0.1.0-SNAPSHOT/WEB-INF/classes"/>
 </classpath>
