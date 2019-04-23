@@ -56,12 +56,12 @@ public class DeleteSPCart extends HttpServlet {
         {
 			request.getSession().setAttribute("GioHang", null);
             session.setAttribute("SLIConGH", null);//reset số lượng hiển thị trên icon giỏ hàng
-    		RequestDispatcher dispatcher= request.getRequestDispatcher("view/GioHang_empty.jsp");//Nếu xóa hết thì cho về trang giỏ hàng trống
+    		RequestDispatcher dispatcher= request.getRequestDispatcher("GioHang_empty.jsp");//Nếu xóa hết thì cho về trang giỏ hàng trống
     		dispatcher.forward(request, response);
     		return;
         }	
         request.getSession().setAttribute("SLIConGH", xl.TongSoLuong(request));
-        RequestDispatcher dispatcher= request.getRequestDispatcher("view/GioHang.jsp");
+        RequestDispatcher dispatcher= request.getRequestDispatcher("GioHang.jsp");
 		dispatcher.forward(request, response);
 		
 	}
@@ -70,7 +70,7 @@ public class DeleteSPCart extends HttpServlet {
         XuLiGioHang xl=new XuLiGioHang();
 		request.getSession().setAttribute("GioHang", null);		
         request.getSession().setAttribute("SLIConGH", xl.TongSoLuong(request));
-		RequestDispatcher dispatcher= request.getRequestDispatcher("view/GioHang_empty.jsp");//Nếu xóa hết thì cho về trang giỏ hàng trống
+		RequestDispatcher dispatcher= request.getRequestDispatcher("GioHang_empty.jsp");//Nếu xóa hết thì cho về trang giỏ hàng trống
 		dispatcher.forward(request, response);
 	}
 

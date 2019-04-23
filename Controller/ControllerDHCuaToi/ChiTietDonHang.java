@@ -47,7 +47,7 @@ public class ChiTietDonHang extends HttpServlet {
 			ResultSet DSSPDonHangBan=xldh.LayThongTinSanPham(MaHD);
 			request.setAttribute("DanhSachSanPham", DSSPDonHangBan);
 			request.setAttribute("ChiTietHoaDonBan", cthdBan);
-			RequestDispatcher dispatcher= request.getRequestDispatcher("view/ChiTietDonHang.jsp");
+			RequestDispatcher dispatcher= request.getRequestDispatcher("ChiTietDonHang.jsp");
 			dispatcher.forward(request, response);
 		}
 		else			

@@ -37,7 +37,7 @@ public class Do_Import extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Do_Import.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Do_Import.jsp");
 		Admin_QLSP_XulyTT controll_xl = new Admin_QLSP_XulyTT();
 		String action = request.getParameter("action");
 		if(action == null)

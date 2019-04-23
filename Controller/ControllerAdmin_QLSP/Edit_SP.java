@@ -35,7 +35,7 @@ public class Edit_SP extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Edit_Sanpham.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Edit_Sanpham.jsp");
 		
 		
 		dispatcher.forward(request, response);

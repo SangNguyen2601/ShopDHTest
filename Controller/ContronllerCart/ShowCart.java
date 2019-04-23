@@ -36,7 +36,7 @@ public class ShowCart extends HttpServlet {
 		HttpSession session = request.getSession();
 		if (session.getAttribute("GioHang") == null)
         {
-			RequestDispatcher dispatcher=request.getRequestDispatcher("view/GioHang_empty.jsp");
+			RequestDispatcher dispatcher=request.getRequestDispatcher("GioHang_empty.jsp");
 			dispatcher.forward(request, response);//Nếu không có gì trong giỏ thì cho nó về trang giỏ hàng trống
 			return;
         }		
@@ -44,7 +44,7 @@ public class ShowCart extends HttpServlet {
 		XuLiGioHang xlgh=new XuLiGioHang();
 		double tongtienDH= xlgh.TongTienDonHang(request);
 		request.getSession().setAttribute("TongTienDH", tongtienDH);
-		RequestDispatcher dispatcher=request.getRequestDispatcher("view/GioHang.jsp");
+		RequestDispatcher dispatcher=request.getRequestDispatcher("GioHang.jsp");
 		dispatcher.forward(request, response);
 	}
 

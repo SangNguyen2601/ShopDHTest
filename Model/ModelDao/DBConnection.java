@@ -8,10 +8,13 @@ import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Vector;
 
+import com.google.cloud.sql.core.CoreSocketFactory;
+import com.google.cloud.sql.mysql.SocketFactory;
+
 public class DBConnection {
 	 //"jdbc:mysql://" + hostName + ":3306/" + dbName;
 	//public static String strConn = "jdbc:sqlserver://localhost:1433;databaseName=webBanDongHo;user=nas;password=anhsang321";
-	public static String strConn = "jdbc:mysql://localhost:3306/webbandongho";
+	public static String strConn = "jdbc:mysql://google/webbandongho?cloudSqlInstance=shopdongho:us-central1:shopdongho-v2&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=root&password=123456789";
 	private Connection connection;
 
 	public DBConnection() {
@@ -21,9 +24,9 @@ public class DBConnection {
 	public void connect() {
 		try {
 			//Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.google.cloud.sql.mysql.SocketFactory");
 			
-			connection = DriverManager.getConnection(strConn,"root","hoang1001");
+			connection = DriverManager.getConnection(strConn);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

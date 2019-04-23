@@ -32,7 +32,7 @@ public class Admin_QLDH_Control extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Admin_QLDH.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Admin_QLDH.jsp");
 		Admin_QLDH_XulyTT control_SP = new Admin_QLDH_XulyTT();
 		
 		ResultSet order_wait = control_SP.Funct_Admin_DSHDB_Wait();

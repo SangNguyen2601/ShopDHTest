@@ -36,7 +36,7 @@ public class Admin_QLSP_Controll extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Admin_QLSP.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Admin_QLSP.jsp");
 		Admin_QLSP_XulyTT control_SP = new Admin_QLSP_XulyTT();
 		
 		ResultSet DSSP = control_SP.Funct_Admin_BangTTSanPham();		

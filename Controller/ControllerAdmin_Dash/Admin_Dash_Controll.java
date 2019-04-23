@@ -34,7 +34,7 @@ public class Admin_Dash_Controll extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Admin_Dashboard.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Admin_Dashboard.jsp");
 		Admin_Dash_XuLyTT control_SP = new Admin_Dash_XuLyTT();
 		SanPham[] outstock= control_SP.Funct_Admin_DSSP_OutofStock();
 		ResultSet hotsale = control_SP.Funct_Admin_DSSP_Hotsale();

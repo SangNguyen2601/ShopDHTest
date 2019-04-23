@@ -36,7 +36,7 @@ public class Admin_QLKH_Controll extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Admin_QLTK.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Admin_QLTK.jsp");
 		Admin_QLKH_XulyTT control_SP = new Admin_QLKH_XulyTT();
 		KhachHang[] dskh = control_SP.Funct_Admin_DSKH();
 		request.getSession().setAttribute("Funct_Admin_DSKH", dskh);

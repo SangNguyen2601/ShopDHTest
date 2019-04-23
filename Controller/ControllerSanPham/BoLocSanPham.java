@@ -28,7 +28,7 @@ public class BoLocSanPham extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher= request.getRequestDispatcher("view/LocSanPham.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("LocSanPham.jsp");
 		
 		String action=request.getParameter("action");
 		if(action==null)

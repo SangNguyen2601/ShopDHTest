@@ -35,7 +35,7 @@ public class HuyDonHang extends HttpServlet {
 		int MaHD=Integer.parseInt(request.getParameter("MaHD"));
 		XuLiDonHangBanCuaKH xldh=new XuLiDonHangBanCuaKH();
 		xldh.HuyHoaDongBan(MaHD);
-		RequestDispatcher dispatcher= request.getRequestDispatcher("view/ChiTietDonHang.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("ChiTietDonHang.jsp");
 		dispatcher.forward(request, response);
 	}
 

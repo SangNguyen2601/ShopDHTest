@@ -46,7 +46,7 @@ public class ShowDSHD extends HttpServlet {
 			XuLiDonHangBanCuaKH xldh=new XuLiDonHangBanCuaKH();
 			HoaDonBan[] hdb=xldh.LayDanhSachHDBan(MaKH);
 			request.setAttribute("DSHDBan", hdb);
-			RequestDispatcher dispatcher=request.getRequestDispatcher("view/DonHangCuaToi.jsp");
+			RequestDispatcher dispatcher=request.getRequestDispatcher("DonHangCuaToi.jsp");
 			dispatcher.forward(request, response);
 		}
 		else

@@ -43,7 +43,7 @@ public class TrangChu extends HttpServlet {
 		request.getSession().setAttribute("SLIConGH", dm);
 		request.setAttribute("LayThongTinSanPhamMoi", danhsachmoi);
 		request.setAttribute("LayThongTinSanPhamNoiBat", danhsachnoibat);
-		RequestDispatcher dispatcher= request.getRequestDispatcher("view/Index.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Index.jsp");
 		dispatcher.forward(request, response);
 		
 	}

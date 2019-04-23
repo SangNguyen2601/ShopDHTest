@@ -1,2 +1,10 @@
 runtime: java
 env: flex
+env_variables:
+  MYSQL_USER:  root
+  MYSQL_PASSWORD: 123456789
+  MYSQL_DATABASE: webbandongho
+  MYSQL_IP: 35.239.20.50
+
+beta_settings:
+  cloud_sql_instances: shopdongho:us-central1:shopdongho-v2

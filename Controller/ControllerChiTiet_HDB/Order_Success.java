@@ -31,7 +31,7 @@ public class Order_Success extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/ChiTiet_HDBan_Success.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("ChiTiet_HDBan_Success.jsp");
 		
 		
 		dispatcher.forward(request, response);

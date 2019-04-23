@@ -34,7 +34,7 @@ public class Admin_Report_Controll extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/Admin_Report.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("Admin_Report.jsp");
 		Admin_Report_XulyTT control_SP = new Admin_Report_XulyTT();
 		
 		ResultSet hotsale = control_SP.Funct_Admin_DSSP_Hotsale();

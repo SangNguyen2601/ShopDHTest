@@ -1,0 +1,10 @@
+account.email=nasabp98@gmail.com
+app.yaml.path=src/main/appengine/app.yaml
+eclipse.preferences.version=1
+include.optional.configuration.files=true
+project.allowObsoleteRuntime=false
+project.bucket=
+project.id=shopdongho
+project.previousVersion.stop=true
+project.promote=true
+project.version=

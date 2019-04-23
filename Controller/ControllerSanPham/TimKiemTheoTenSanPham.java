@@ -59,7 +59,7 @@ public class TimKiemTheoTenSanPham extends HttpServlet {
 		SanPham[] listDaok=xlsp.phantrang(start, end, listsp);
 		request.getSession().setAttribute("LocSanPhamTong", listsp);
 		request.getSession().setAttribute("LocSanPham", listDaok);
-		RequestDispatcher dispatcher=request.getRequestDispatcher("view/LocSanPham.jsp");
+		RequestDispatcher dispatcher=request.getRequestDispatcher("LocSanPham.jsp");
 		dispatcher.forward(request, response);
 	}
 

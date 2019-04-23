@@ -31,7 +31,7 @@ public class ChiTietSanPham extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher= request.getRequestDispatcher("view/SanPham.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("SanPham.jsp");
 		XuLiSanPham control_SP=  new XuLiSanPham();
 		//
 		int MaSP=Integer.parseInt(request.getParameter("MaSP"));

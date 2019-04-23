@@ -32,7 +32,7 @@ public class Order_allStatus extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher= request.getRequestDispatcher("admin/chiTiet_HDBan-ofCus.jsp");
+		RequestDispatcher dispatcher= request.getRequestDispatcher("chiTiet_HDBan-ofCus.jsp");
 		
 		dispatcher.forward(request, response);
 		
